@@ -17,6 +17,12 @@ Usage:
 
 This command is used to start a new repository.
 
+### **git clone**
+Usage: 
+* `git clone [url]` 
+
+This command is used to obtain a repository from an existing URL.
+
 ### **git add**
 Usage: 
 * `git add [file]`  
