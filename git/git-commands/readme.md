@@ -42,4 +42,3 @@ Git Commands that you will be using frequently while you are working with Git.
 ||`git stash pop`|This command restores the most recently stashed files.|
 ||`git stash list`|This command lists all stashed changesets.|
 ||`git stash drop`|This command discards the most recently stashed changeset.|
-|
