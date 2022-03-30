@@ -10,7 +10,7 @@
             display: flex;
             justify-content: center
         }
-        table, tr, td{
+        table, tr, td {
             border: solid 1px black;
         }
         table {
@@ -21,15 +21,15 @@
 <body>
     <div>
         <table>
+            <caption>table exercises</caption>
+            <thead>
+                <tr>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                </tr>
+            </thead>
             <tbody>
-                <tr>
-                    <td colspan="3">table exercises</td>
-                </tr>
-                <tr>
-                    <td>A</td>
-                    <td>B</td>
-                    <td>C</td>
-                </tr>
                 <tr>
                     <td>1</td>
                     <td>2</td>
@@ -45,21 +45,21 @@
                     <td>8</td>
                     <td>9</td>
                 </tr>
-                <tr>
-                    <td colspan="3">Section A</td>
-                </tr>
             </tbody>
+            <tfoot>
+                <td colspan="3">Section A</td>
+            </tfoot>
         </table>
         <table>
+            <caption>table exercises</caption>
+            <thead>
+                <tr>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                </tr>
+            </thead>
             <tbody>
-                <tr>
-                    <td colspan="3">table exercises</td>
-                </tr>
-                <tr>
-                    <td>A</td>
-                    <td>B</td>
-                    <td>C</td>
-                </tr>
                 <tr>
                     <td>1</td>
                     <td colspan="2">2</td>
@@ -73,10 +73,10 @@
                     <td>8</td>
                     <td>9</td>
                 </tr>
-                <tr>
-                    <td colspan="3">Section B</td>
-                </tr>
             </tbody>
+            <tfoot>
+                <td colspan="3">Section B</td>
+            </tfoot>
         </table>
     </div>
 </body>
