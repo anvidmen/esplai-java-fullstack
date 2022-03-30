@@ -1,0 +1,15 @@
+.go-to-top {
+	display:flex;
+	font-size:2.7rem;
+	color: rgba(74, 73, 73, 0.6);
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:25px;
+	border-radius: 50%;
+}
+
+.go-to-top:hover{
+	font-size:2.8rem;
+	color: #000;
+}
