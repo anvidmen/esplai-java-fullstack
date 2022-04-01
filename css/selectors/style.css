@@ -58,3 +58,7 @@ a, p, h1 {
 main > p {
     background-color: rgb(62, 25, 87);
 }
+
+h1 + * {
+    background-color: black !important
+}
