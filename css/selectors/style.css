@@ -45,3 +45,8 @@ p {
 [href*="127"] {
     background-color: violet;
 }
+
+[href^="http"] {
+    display: flex;
+    flex-direction: column;
+}
