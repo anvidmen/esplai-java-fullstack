@@ -54,3 +54,7 @@ p {
 a, p, h1 {
     color: rgb(0, 255, 81);
 }
+
+main > p {
+    background-color: rgb(62, 25, 87);
+}
