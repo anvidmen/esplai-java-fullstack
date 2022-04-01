@@ -19,3 +19,7 @@ p {
 [id] {
     background-color: rgb(29, 85, 51);
 }
+
+[id = "title-1"] {
+    color:rgb(242, 16, 0)
+}
