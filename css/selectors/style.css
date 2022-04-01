@@ -66,3 +66,7 @@ h1 + * {
 h1 ~ * {
     background-color: rgb(0, 0, 0)
 }
+
+main > * {
+    background-color: rgb(51, 1, 58);
+}
