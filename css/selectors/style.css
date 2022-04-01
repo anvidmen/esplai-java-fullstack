@@ -41,3 +41,7 @@ p {
 [class|="title"] {
    background-color: red;
 }
+
+[href*="127"] {
+    background-color: violet;
+}
