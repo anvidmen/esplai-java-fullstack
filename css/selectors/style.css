@@ -6,3 +6,8 @@
 p {
     color:rgb(188, 255, 220)
 }
+
+#title-1 {
+    border: 1px solid white;
+    border-radius: 10px;
+}
