@@ -37,3 +37,7 @@ p {
 [href$=".com"]{
     color:rgb(128, 10, 238)
 }
+
+[class|="title"] {
+   background-color: red;
+}
