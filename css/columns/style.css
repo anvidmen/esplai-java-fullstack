@@ -2,17 +2,17 @@ html {
     background-color: aquamarine;
 }
 
-p {
+.lorem {
     column-count: 3;
     column-gap: 40px;
     column-rule: ridge 2px red;
 }
 
-h1:hover {
+.title:hover {
     color: brown;
 }
 
-p:hover {
+.lorem:hover {
     background-color: yellowgreen;
     color: rgb(132, 0, 255);
 }
