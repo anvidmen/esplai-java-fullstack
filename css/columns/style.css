@@ -1,0 +1,18 @@
+html {
+    background-color: aquamarine;
+}
+
+p {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule: ridge 2px red;
+}
+
+h1:hover {
+    color: brown;
+}
+
+p:hover {
+    background-color: yellowgreen;
+    color: rgb(132, 0, 255);
+}
