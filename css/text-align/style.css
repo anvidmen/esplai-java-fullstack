@@ -1,0 +1,41 @@
+body {
+    background-color: aquamarine;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    border: solid 1px black;
+    margin: 2rem;
+    width: 20rem;
+    height: 3rem;
+    border-radius: 5px;
+    padding-inline: 5px;
+    cursor: pointer;
+}
+
+.text:nth-child(1) {
+    justify-content: left;
+    text-align: start;
+}
+
+.text:nth-child(2) {
+    justify-content: center;
+    text-align: center;
+}
+
+.text:nth-child(3) {
+    justify-content: right;
+    text-align: end;
+}
