@@ -1,0 +1,10 @@
+.title {
+    float: left;
+    width: 50%;
+}
+
+.image{
+    float: right;
+    width: 50%;
+    height: 30%;
+}
