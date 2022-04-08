@@ -20,8 +20,11 @@ html {
     "banner"
     "extra"
     "image";
-  text-align: center;
-  
+}
+.container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header {
