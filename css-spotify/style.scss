@@ -41,10 +41,6 @@
   display: block;
 }
 
-.navbar.responsive {
-  position: relative;
-}
-
 .navbar.responsive .dropdown {
   position: absolute;
   right: 0;
@@ -60,8 +56,11 @@
   display: block;
   text-align: center;
 }
+.navbar.responsive {
+  box-shadow: 2px 2px 34px 3px rgba(0, 0, 0, 0.2);
+}
 
-.navbar a:hover {
+.navbar > a:hover {
   background-color: rgba(201, 201, 201, 0.2);
   color: $green;
 }
@@ -95,6 +94,45 @@ header {
   text-align: center;
   font-family: "Manrope", sans-serif;
 }
+
+.title-spotify {
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  color: $text;
+  margin: 40px 0;
+  text-decoration: underline $green;
+}
+
+.spotify-section {
+  display: flex;
+  flex-direction: column;
+  color: $text;
+  text-align: center;
+}
+
+.songs,
+.music,
+.stream {
+  margin:30px;
+}
+
+.icon {
+  width: 70px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.sub-title {
+  font-family: "Manrope", sans-serif;
+  color: $green;
+  margin-bottom: 20px;
+}
+
+.sub-title + p {
+  color: #787878;
+  font-family: "Manrope", sans-serif;
+}
+
 
 @media screen and (min-width: 425px) {
   .logo {
@@ -144,6 +182,10 @@ header {
     font-size: 20px;
   }
   
+  .spotify-section {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 @media screen and (min-width: 1024px) {

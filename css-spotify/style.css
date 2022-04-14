@@ -39,10 +39,6 @@
   display: block;
 }
 
-.navbar.responsive {
-  position: relative;
-}
-
 .navbar.responsive .dropdown {
   position: absolute;
   right: 0;
@@ -59,7 +55,12 @@
   text-align: center;
 }
 
-.navbar a:hover {
+.navbar.responsive {
+  -webkit-box-shadow: 2px 2px 34px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 34px 3px rgba(0, 0, 0, 0.2);
+}
+
+.navbar > a:hover {
   background-color: rgba(201, 201, 201, 0.2);
   color: #00B172;
 }
@@ -93,6 +94,50 @@ header {
           transform: translate(-50%, -50%);
   color: #FFF;
   text-align: center;
+  font-family: "Manrope", sans-serif;
+}
+
+.title-spotify {
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  color: #1A1A1A;
+  margin: 40px 0;
+  -webkit-text-decoration: underline #00B172;
+          text-decoration: underline #00B172;
+}
+
+.spotify-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #1A1A1A;
+  text-align: center;
+}
+
+.songs,
+.music,
+.stream {
+  margin: 30px;
+}
+
+.icon {
+  width: 70px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.sub-title {
+  font-family: "Manrope", sans-serif;
+  color: #00B172;
+  margin-bottom: 20px;
+}
+
+.sub-title + p {
+  color: #787878;
   font-family: "Manrope", sans-serif;
 }
 
@@ -145,6 +190,14 @@ header {
   .text {
     top: 66;
     font-size: 20px;
+  }
+  .spotify-section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
