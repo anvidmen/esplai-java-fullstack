@@ -114,8 +114,8 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: #1A1A1A;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .songs,
@@ -139,6 +139,69 @@ header {
 .sub-title + p {
   color: #787878;
   font-family: "Manrope", sans-serif;
+}
+
+.green-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #00B172;
+}
+
+.kanye-west {
+  margin: 50px 50px 20px;
+  color: #FFF;
+  font-family: "Manrope", sans-serif;
+}
+
+.kanye-west > h2 {
+  -webkit-text-decoration: underline #FFF;
+          text-decoration: underline #FFF;
+  font-weight: 600;
+  font-size: 24px;
+  padding-bottom: 40px;
+}
+
+.paragraph {
+  margin-bottom: 40px;
+}
+
+.paragraph h3 {
+  margin-bottom: 20px;
+}
+
+.paragraph p {
+  font-weight: 200;
+}
+
+.icon-section {
+  margin-bottom: 50px;
+  width: 20%;
+}
+
+.icon-spotify {
+  width: 100%;
+  height: 100%;
+}
+
+.app-section {
+  width: 80%;
+  margin-bottom: 50px;
+}
+
+.image-app {
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (min-width: 425px) {
@@ -199,6 +262,28 @@ header {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  .green-section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-left: 20px solid #FFF;
+    border-right: 20px solid #FFF;
+  }
+  .kanye-west .icon-section {
+    margin: 50px;
+  }
+  .icon-section {
+    width: 30%;
+  }
+  .app-section {
+    width: 100%;
+    margin: 50px;
+  }
+  .image-app {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -209,6 +294,20 @@ header {
   .text {
     top: 57%;
     font-size: 24px;
+  }
+  .paragraph {
+    width: 50%;
+  }
+  .icon-section {
+    width: 17%;
+    position: absolute;
+  }
+  .app-section {
+    width: 35%;
+    margin: 50px;
+  }
+  .image-app {
+    width: 100%;
   }
 }
 
@@ -223,6 +322,37 @@ header {
   .text {
     top: 54%;
     font-size: 26px;
+  }
+  .green-section {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .kanye-west {
+    padding-top: 40px;
+    margin: 50px 0 50px 50px;
+  }
+  .kanye-west h2 {
+    font-size: 34px;
+  }
+  .paragraph {
+    width: 50%;
+  }
+  .paragraph h3 {
+    font-size: 26px;
+  }
+  .paragraph p {
+    font-size: 22px;
+  }
+  .icon-section {
+    width: 15%;
+  }
+  .app-section {
+    width: 30%;
+    padding: 0;
+    margin: 0;
+  }
+  .image-app {
+    width: 80%;
   }
 }
 /*# sourceMappingURL=style.css.map */

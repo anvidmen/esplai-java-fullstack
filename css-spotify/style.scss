@@ -106,14 +106,14 @@ header {
 .spotify-section {
   display: flex;
   flex-direction: column;
-  color: $text;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .songs,
 .music,
 .stream {
-  margin:30px;
+  margin: 30px;
 }
 
 .icon {
@@ -133,10 +133,62 @@ header {
   font-family: "Manrope", sans-serif;
 }
 
+.green-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $green;
+}
+
+.kanye-west {
+  margin: 50px 50px 20px;
+  color: $white;
+  font-family: "Manrope", sans-serif;
+}
+
+.kanye-west > h2 {
+  text-decoration: underline $white;
+  font-weight: 600;
+  font-size: 24px;
+  padding-bottom: 40px;
+}
+
+.paragraph {
+  margin-bottom: 40px;
+
+  h3 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-weight: 200;
+  }
+}
+
+.icon-section {
+  margin-bottom: 50px;
+  width: 20%;
+}
+
+.icon-spotify {
+  width: 100%;
+  height: 100%;
+}
+
+.app-section {
+  width: 80%;
+  margin-bottom: 50px;
+}
+
+.image-app {
+  width: 100%;
+  height: 100%;
+}
 
 @media screen and (min-width: 425px) {
   .logo {
-    width: 18%
+    width: 18%;
   }
 }
 
@@ -169,7 +221,7 @@ header {
   }
 
   .logo {
-    width: 12%
+    width: 12%;
   }
 
   .title {
@@ -181,10 +233,34 @@ header {
     top: 66;
     font-size: 20px;
   }
-  
+
   .spotify-section {
     flex-direction: row;
     justify-content: space-around;
+  }
+
+  .green-section {
+    flex-direction: row;
+    border-left: 20px solid $white;
+    border-right: 20px solid $white;
+  }
+
+  .kanye-west .icon-section {
+    margin: 50px;
+  }
+
+  .icon-section {
+    width: 30%;
+  }
+
+  .app-section {
+    width: 100%;
+    margin: 50px;
+  }
+
+  .image-app {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -198,11 +274,29 @@ header {
     top: 57%;
     font-size: 24px;
   }
+
+  .paragraph {
+    width: 50%;
+  }
+
+  .icon-section {
+    width: 17%;
+    position: absolute;
+  }
+
+  .app-section {
+    width: 35%;
+    margin: 50px;
+  }
+
+  .image-app {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .logo {
-    width: 10%
+    width: 10%;
   }
 
   .title {
@@ -213,5 +307,45 @@ header {
   .text {
     top: 54%;
     font-size: 26px;
+  }
+
+  .green-section {
+    justify-content: space-around;
+  }
+
+  .kanye-west {
+    padding-top: 40px;
+    margin: 50px 0 50px 50px;
+   
+    h2 {
+      font-size: 34px;
+    }
+  }
+
+  .paragraph {
+    width: 50%;
+
+    h3 {
+      font-size: 26px;
+    }
+    
+    p {
+      font-size: 22px;
+    }
+
+  }
+
+  .icon-section {
+    width: 15%;
+  }
+
+  .app-section {
+    width: 30%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .image-app {
+    width: 80%;
   }
 }
