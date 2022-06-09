@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #FFF;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+}
+
+.logo {
+  padding: 16px;
+  margin-right: auto;
+  width: 24%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #1A1A1A;
+  text-align: center;
+  text-decoration: none;
+  padding: 16px;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.navbar a:not(:first-child) {
+  display: none;
+}
+
+.navbar a.dropdown {
+  float: right;
+  display: block;
+}
+
+.navbar.responsive .dropdown {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.navbar.responsive .principal-link {
+  padding: 10px;
+}
+
+.navbar.responsive a {
+  float: none;
+  display: block;
+  text-align: center;
+}
+
+.navbar.responsive {
+  -webkit-box-shadow: 2px 2px 34px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 34px 3px rgba(0, 0, 0, 0.2);
+}
+
+.navbar > a:hover {
+  background-color: rgba(201, 201, 201, 0.2);
+  color: #00B172;
+}
+
+header {
+  position: relative;
+}
+
+.landing {
+  width: 100%;
+  height: 100vh;
+}
+
+.title {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #FFF;
+  font-size: 40px;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+}
+
+.text {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #FFF;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+}
+
+.title-spotify {
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  color: #1A1A1A;
+  margin: 40px 0;
+  -webkit-text-decoration: underline #00B172;
+          text-decoration: underline #00B172;
+}
+
+.spotify-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.songs,
+.music,
+.stream {
+  margin: 30px;
+}
+
+.icon {
+  width: 70px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.sub-title {
+  font-family: "Manrope", sans-serif;
+  color: #00B172;
+  margin-bottom: 20px;
+}
+
+.sub-title + p {
+  color: #787878;
+  font-family: "Manrope", sans-serif;
+}
+
+.green-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #00B172;
+}
+
+.kanye-west {
+  margin: 50px 50px 20px;
+  color: #FFF;
+  font-family: "Manrope", sans-serif;
+}
+
+.kanye-west > h2 {
+  -webkit-text-decoration: underline #FFF;
+          text-decoration: underline #FFF;
+  font-weight: 600;
+  font-size: 24px;
+  padding-bottom: 40px;
+}
+
+.paragraph {
+  margin-bottom: 40px;
+}
+
+.paragraph h3 {
+  margin-bottom: 20px;
+}
+
+.paragraph p {
+  font-weight: 200;
+}
+
+.icon-section {
+  margin-bottom: 50px;
+  width: 20%;
+}
+
+.icon-spotify {
+  width: 100%;
+  height: 100%;
+}
+
+.app-section {
+  width: 80%;
+  margin-bottom: 50px;
+}
+
+.image-app {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 425px) {
+  .logo {
+    width: 18%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    justify-items: center;
+    font-size: 18px;
+  }
+  .navbar a:not(:first-child) {
+    display: block;
+    float: right;
+  }
+  .navbar a.dropdown {
+    float: right;
+    display: none;
+  }
+  .navbar.responsive .principal-link {
+    padding-top: 10px;
+  }
+  .logo {
+    width: 12%;
+  }
+  .title {
+    top: 45%;
+    font-size: 48px;
+  }
+  .text {
+    top: 66;
+    font-size: 20px;
+  }
+  .spotify-section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .green-section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-left: 20px solid #FFF;
+    border-right: 20px solid #FFF;
+  }
+  .kanye-west .icon-section {
+    margin: 50px;
+  }
+  .icon-section {
+    width: 30%;
+  }
+  .app-section {
+    width: 100%;
+    margin: 50px;
+  }
+  .image-app {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .title {
+    top: 41%;
+    font-size: 53px;
+  }
+  .text {
+    top: 57%;
+    font-size: 24px;
+  }
+  .paragraph {
+    width: 50%;
+  }
+  .icon-section {
+    width: 17%;
+    position: absolute;
+  }
+  .app-section {
+    width: 35%;
+    margin: 50px;
+  }
+  .image-app {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .logo {
+    width: 10%;
+  }
+  .title {
+    top: 41%;
+    font-size: 66px;
+  }
+  .text {
+    top: 54%;
+    font-size: 26px;
+  }
+  .green-section {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .kanye-west {
+    padding-top: 40px;
+    margin: 50px 0 50px 50px;
+  }
+  .kanye-west h2 {
+    font-size: 34px;
+  }
+  .paragraph {
+    width: 50%;
+  }
+  .paragraph h3 {
+    font-size: 26px;
+  }
+  .paragraph p {
+    font-size: 22px;
+  }
+  .icon-section {
+    width: 15%;
+  }
+  .app-section {
+    width: 30%;
+    padding: 0;
+    margin: 0;
+  }
+  .image-app {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

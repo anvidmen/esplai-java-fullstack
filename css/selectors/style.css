@@ -1,0 +1,72 @@
+* {
+    background-color: rgb(21, 40, 39);
+    color: #fff;
+}
+
+p {
+    color:rgb(188, 255, 220)
+}
+
+#title-1 {
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.bg-yellow {
+    background-color: rgb(255, 255, 174);
+}
+
+[id] {
+    background-color: rgb(29, 85, 51);
+}
+
+[id = "title-1"] {
+    color:rgb(242, 16, 0)
+}
+
+[href="https://www.yahoo.com"] {
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+[class^="title"] {
+    display: flex;
+    justify-content: center;
+}
+
+[href$=".com"]{
+    color:rgb(128, 10, 238)
+}
+
+[class|="title"] {
+   background-color: red;
+}
+
+[href*="127"] {
+    background-color: violet;
+}
+
+[href^="http"] {
+    display: flex;
+    flex-direction: column;
+}
+
+a, p, h1 {
+    color: rgb(0, 255, 81);
+}
+
+main > p {
+    background-color: rgb(62, 25, 87);
+}
+
+h1 + * {
+    background-color: black !important
+}
+
+h1 ~ * {
+    background-color: rgb(0, 0, 0)
+}
+
+main > * {
+    background-color: rgb(51, 1, 58);
+}

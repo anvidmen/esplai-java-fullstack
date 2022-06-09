@@ -1,0 +1,58 @@
+* {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+span {
+    margin: 15px;
+}
+
+.container > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.red {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 100%;
+}
+
+.blue {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(0, 0, 255);
+    border-radius: 100%;
+}
+
+.green {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(0, 255, 0);
+    border-radius: 100%;
+}
+
+.magenta {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(255, 0, 255);
+    border-radius: 100%;
+}
+
+.cyan {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(0, 255, 255);
+    border-radius: 100%;
+}
+
+.yellow {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(255, 255, 0);
+    border-radius: 100%;
+}

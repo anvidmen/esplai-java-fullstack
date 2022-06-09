@@ -1,0 +1,8 @@
+.container {
+    margin: 2rem;
+    padding: 5rem;
+    border-top: medium ridge aqua;
+    border-bottom: thick double violet ;
+    border-left: 3px dotted brown;
+    border-right: 2px dashed  blue;
+}

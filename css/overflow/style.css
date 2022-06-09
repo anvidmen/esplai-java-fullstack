@@ -1,0 +1,15 @@
+.container-one {
+    width: 50%;
+    height: 100px;
+    background-color: greenyellow;
+    overflow: hidden;
+    margin: 2rem;
+}
+
+.container-two {
+    width: 50%;
+    height: 100px;
+    background-color: rgb(47, 255, 206);
+    overflow: auto;
+    margin: 2rem;
+}

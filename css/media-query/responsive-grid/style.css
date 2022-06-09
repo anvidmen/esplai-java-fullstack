@@ -1,0 +1,107 @@
+*,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 0.5fr 1.5fr 1.5fr, repeat(3, 1fr);
+  gap: 0px 0px;
+  grid-template-areas:
+    "header"
+    "menu"
+    "hero"
+    "main"
+    "banner"
+    "extra"
+    "image";
+}
+.container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  background-color: rgb(17, 22, 40);
+  color: #fff;
+}
+
+.menu {
+  background-color: rgb(220, 76, 84);
+  color: #fff;
+}
+
+.hero {
+  background-color: rgb(93, 133, 194);
+  color: #fff;
+}
+
+.main {
+  background-color: rgb(40, 52, 73);
+  color: #fff;
+}
+
+.banner {
+  background-color: rgb(248, 210, 122);
+}
+
+.extra {
+  background-color: rgb(110, 186, 153);
+}
+
+.image {
+  background-color: rgb(200, 226, 228);
+}
+
+@media (min-width: 768px) {
+  .container {  
+    grid-template-columns: 0.5fr 1fr 1fr 2fr;
+    grid-template-rows: 0.5fr 2fr 2fr 0.8fr 1fr;
+    grid-template-areas:
+      "header header header header"
+      "hero hero hero hero"
+      "menu main main main"
+      "menu banner banner banner"
+      "menu extra extra image";
+  }
+  .header { grid-area: header; }
+
+  .hero { grid-area: hero; }
+  
+  .main { grid-area: main; }
+  
+  .banner { grid-area: banner; }
+  
+  .extra { grid-area: extra; }
+  
+  .image { grid-area: image; }
+  
+  .menu { grid-area: menu; } 
+}
+
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr 1fr 0.5fr 1fr; 
+    grid-template-rows: 0.5fr 2fr 1fr 1fr 0.5fr; 
+    grid-template-areas: 
+      "header menu menu menu"
+      "hero hero hero hero"
+      "main main . image"
+      "main main . extra"
+      "banner banner banner banner"; 
+  }
+  .header { grid-area: header; }
+  .menu { grid-area: menu; }
+  .hero { grid-area: hero; }
+  .main { grid-area: main; }
+  .image { grid-area: image; }
+  .extra { grid-area: extra; }
+  .banner { grid-area: banner; }
+  
+}

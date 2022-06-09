@@ -1,0 +1,22 @@
+* {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, #024847 0%, #1e8298 35%, #00fffb 100%);
+}
+
+@media (min-width: 768px) {
+  body {
+    background: linear-gradient(90deg, #024808 0%, #1e9822 35%, #80ff00 100%);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background: linear-gradient(90deg, #440248 0%, #981e98 35%, #ff00f7 100%);
+  }
+}

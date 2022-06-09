@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  background: #FFFFFF;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  text-decoration: none;
+}
+
+.title > h1 {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic,
+    "AppleGothic", sans-serif;
+  font-size: 22px;
+  padding: 40px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  color: rgba(2, 2, 2, 0.8);
+}
+
+h1:hover {
+  color: #006BC0;
+  font-size: 22.5px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.link-projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: #006BC0 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  box-shadow: 1px 3px 6px 3px #00000039;
+  overflow: hidden;
+  width: 14rem;
+  height: 8rem;
+  margin: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bolder;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.link-projects:hover {
+  color: rgb(255, 255, 255);
+  font-size: 16.5px;
+  font-weight: bolder;
+}
+
+@media (min-width: 768px) {
+  .title > h1 {
+    font-size: 28px;
+  }
+}
